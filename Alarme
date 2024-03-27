@@ -1,0 +1,55 @@
+int led [5]; //Definir quantos leds terá oconjunto
+void setup()
+{
+  
+  led[0] = 13; //Definir o led referência
+  led[1] = 12;
+  led[2] = 9;
+  led[3] = 8;
+  led[4] = 7;
+  
+ 
+  pinMode(led[0], OUTPUT); //Definir comportamento do led
+  pinMode(led[1], OUTPUT);
+  pinMode(led[2], OUTPUT);
+  pinMode(led[3], OUTPUT);
+  pinMode(led[4], OUTPUT);
+  
+
+}
+
+void loop()
+{
+  digitalWrite(led[0], LOW);//verm
+  digitalWrite(led[1], HIGH); //amar.
+  digitalWrite(led[2], LOW); //verd.
+  digitalWrite(led[3], HIGH); //vermp
+  digitalWrite(led[4], LOW); //verdp.
+  delay(1000);
+  
+  digitalWrite(led[0], HIGH);//verm
+  digitalWrite(led[1], LOW); //amar.
+  digitalWrite(led[2], LOW); //verd.
+  digitalWrite(led[3], LOW); //vermp
+  digitalWrite(led[4], HIGH); //verdp.
+  delay(1000);
+  
+  digitalWrite(led[0], LOW);//verm
+  digitalWrite(led[1], LOW); //amar.
+  digitalWrite(led[2], HIGH); //verd.
+  digitalWrite(led[3], HIGH); //vermp
+  digitalWrite(led[4], LOW); //verdp.
+  delay(1000); 
+  
+  digitalWrite(led[3], HIGH);//verm
+  delay(250);
+  digitalWrite(led[3], LOW);//verm
+  delay(250);
+  digitalWrite(led[3], HIGH);//verm
+  delay(250);
+  digitalWrite(led[3], LOW);//verm
+  delay(250);
+  
+  
+ }
+ 
